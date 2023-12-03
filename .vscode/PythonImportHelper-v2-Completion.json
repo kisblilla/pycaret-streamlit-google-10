@@ -1,0 +1,63 @@
+[
+    {
+        "label": "load_model",
+        "importPath": "pycaret.regression",
+        "description": "pycaret.regression",
+        "isExtraImport": true,
+        "detail": "pycaret.regression",
+        "documentation": {}
+    },
+    {
+        "label": "predict_model",
+        "importPath": "pycaret.regression",
+        "description": "pycaret.regression",
+        "isExtraImport": true,
+        "detail": "pycaret.regression",
+        "documentation": {}
+    },
+    {
+        "label": "streamlit",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "streamlit",
+        "description": "streamlit",
+        "detail": "streamlit",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "run",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def run():\n    from PIL import Image\n    image = Image.open('logo.png')\n    image_hospital = Image.open('hospital.jpg')\n    st.image(image,use_column_width=False)\n    add_selectbox = st.sidebar.selectbox(\n    \"How would you like to predict?\",\n    (\"Online\", \"Batch\"))\n    st.sidebar.info('This app is created to predict patient hospital charges')\n    st.sidebar.success('https://www.pycaret.org')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "#model",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "#model = load_model('deployment_28042020')\n#                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           def predict(model, input_df):\n#                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               predictions_df = predict_model(estimator=model, data=input_df)\n#                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               predictions = predictions_df['Label'][0]\n#                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               return predictions\ndef run():\n    from PIL import Image\n    image = Image.open('logo.png')\n    image_hospital = Image.open('hospital.jpg')\n    st.image(image,use_column_width=False)",
+        "detail": "app",
+        "documentation": {}
+    }
+]
